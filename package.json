@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "keywords": [
     "expo",
-    "expo download",
-    "expo file system"
+    "expo-file-downloader",
+    "file-downloader",
+    "react-native",
+    "react-native-file-download"
   ],
   "description": "download manager based on expo react native",
   "homepage": "https://github.com/thareekanvar/expo-download-manager",
