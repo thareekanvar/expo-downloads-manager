@@ -1,0 +1,21 @@
+{
+  "name": "expo-download-manager",
+  "version": "1.0.0",
+  "keywords": [
+    "expo",
+    "expo download",
+    "expo file system"
+  ],
+  "description": "download manager based on expo react native",
+  "homepage": "https://github.com/thareekanvar/expo-download-manager",
+  "bugs": "https://github.com/thareekanvar/expo-download-manager/issues",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/*.js",
+    "bin/*.js"
+  ],
+  "repository": "https://github.com/thareekanvar/expo-download-manager",
+  "author": "thareekanvar <thareekanvar@gmail.com>",
+  "license": "MIT"
+}
