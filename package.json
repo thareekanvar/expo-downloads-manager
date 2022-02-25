@@ -1,22 +1,23 @@
 {
-  "name": "expo-download-manager",
+  "name": "expo-downloads-manager",
   "version": "1.0.0",
   "keywords": [
     "expo",
     "expo-file-downloader",
     "file-downloader",
     "react-native",
-    "react-native-file-download"
+    "react-native-file-download",
+    "expo-downloads-manager"
   ],
   "description": "download manager based on expo react native",
-  "homepage": "https://github.com/thareekanvar/expo-download-manager",
-  "bugs": "https://github.com/thareekanvar/expo-download-manager/issues",
+  "homepage": "https://github.com/thareekanvar/expo-downloads-manager",
+  "bugs": "https://github.com/thareekanvar/expo-downloads-manager/issues",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
-  "repository": "https://github.com/thareekanvar/expo-download-manager",
+  "repository": "https://github.com/thareekanvar/expo-downloads-manager",
   "author": "thareekanvar <thareekanvar@gmail.com>",
   "license": "MIT",
   "scripts": {
