@@ -15,3 +15,7 @@ Just run
 ```
 yarn add expo-downloads-manager
 ```
+
+Please see [expo-download-manager-example](https://github.com/thareekanvar/expo-download-manager-example) for a working example of this function in action
+
+READ ME WILL UPDATE SOON
