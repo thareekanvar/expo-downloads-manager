@@ -19,6 +19,10 @@
   "repository": "https://github.com/thareekanvar/expo-download-manager",
   "author": "thareekanvar <thareekanvar@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn run build"
+  },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-native": "^0.66.16",
