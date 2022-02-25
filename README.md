@@ -18,29 +18,33 @@ You need the following permissions to use this library
 
 # Demo-Preview
 
-Android
+<table>
+  <tr>
+     <td>Android</td>
+     <td>IOS</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/26960181/155687226-a6199760-39b5-4fd1-8389-e087b12ce237.gif" width="250" height="450"></td>
+    <td><img src="https://user-images.githubusercontent.com/26960181/155687314-567066a2-2b96-4003-b740-9dbc698a64db.gif" width="250" height="450"></td>
+  </tr>
+ </table>
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/26960181/155687226-a6199760-39b5-4fd1-8389-e087b12ce237.gif)
-
-IOS
-
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/26960181/155687314-567066a2-2b96-4003-b740-9dbc698a64db.gif)
 
 # Table of contents
 
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [downloadToFolder](#downloadtofolder)
+  - [downloadFileFromUri](#downloadFileFromUri)
   - [openDownloadedFile](#openDownloadedFile)
   - [checkFileIsAvailable](#checkFileIsAvailable)
 - [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-      - [PayPal](#paypal)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-
+  - [Sponsor](#sponsor)
+    - [PayPal](#paypal)
+  - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 
 # Installation
+
 [(Back to top)](#table-of-contents)
 
 Just run
@@ -50,11 +54,12 @@ yarn add expo-downloads-manager
 ```
 
 # Usage
+
 [(Back to top)](#table-of-contents)
 
 To see a full-code working example,you can check out this example app [expo-download-manager-example](https://github.com/thareekanvar/expo-download-manager-example).
 
-## downloadFileFromUri
+### downloadFileFromUri
 
 ```jsx
 import { downloadFileFromUri } from 'expo-downloads-manager';
@@ -76,17 +81,19 @@ const callback = (downloadProgress) => {
 ```
 
 Arguments:
-* `uri`: `string` - the URI of the resource you want to download.
-* `filename`: `string` - the filename to save the resource (only the filename, no path information, must be unique).
-* `callback`?: `({totalBytesWritten: number, totalBytesExpectedToWrite: number}) => void` - Optional argument, gets called on every file write to the system with information about how much of the file has been written and how much is left to write.
+
+- `uri`: `string` - the URI of the resource you want to download.
+- `filename`: `string` - the filename to save the resource (only the filename, no path information, must be unique).
+- `callback`?: `({totalBytesWritten: number, totalBytesExpectedToWrite: number}) => void` - Optional argument, gets called on every file write to the system with information about how much of the file has been written and how much is left to write.
 
 This function will download a file from the given URI.
 
 Return:
-* `status`: `"downloading" | "finished" | "error"` - current status of the download.
-* `error`: `string` - reason for the error ( error return only if there is any error occurs ).
 
-## openDownloadedFile
+- `status`: `"downloading" | "finished" | "error"` - current status of the download.
+- `error`: `string` - reason for the error ( error return only if there is any error occurs ).
+
+### openDownloadedFile
 
 ```jsx
 import { openDownloadedFile } from 'expo-downloads-manager';
@@ -98,11 +105,12 @@ import { openDownloadedFile } from 'expo-downloads-manager';
 ```
 
 Arguments:
-* `filename`: `string` - the filename used to save the resource to (only the filename, no path information, must be unique).
+
+- `filename`: `string` - the filename used to save the resource to (only the filename, no path information, must be unique).
 
 This function will open the downloaded file.
 
-## checkFileIsAvailable
+### checkFileIsAvailable
 
 ```jsx
 import { checkFileIsAvailable } from 'expo-downloads-manager';
@@ -117,16 +125,19 @@ import { checkFileIsAvailable } from 'expo-downloads-manager';
 ```
 
 Arguments:
-* `filename`: `string` - the filename used to save the resource to (only the filename, no path information, must be unique).
+
+- `filename`: `string` - the filename used to save the resource to (only the filename, no path information, must be unique).
 
 This function will check this file is already downloaded or not.
 
 Return:
-* `isAvailable`: `Boolean` - availability of the file.it returns true file is available else not.
+
+- `isAvailable`: `Boolean` - availability of the file.it returns true file is available else not.
 
 # Contribute
 
 ### Sponsor
+
 [(Back to top)](#table-of-contents)
 
 If this saved you development time or you otherwise found it useful, leave a star or follow in GitHub.
@@ -134,11 +145,13 @@ If this saved you development time or you otherwise found it useful, leave a sta
 You can also buy me a coffee to say thanks:
 
 <!-- PayPal -->
+
 #### PayPal
+
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/paypalme/thareekanvar)
 
 ### Adding new features or fixing bugs
-[(Back to top)](#table-of-contents)
 
+[(Back to top)](#table-of-contents)
 
 Bug reports are also welcome, please provide a minimum reproducible example along with a bug report
