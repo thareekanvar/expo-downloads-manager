@@ -9,3 +9,9 @@
 ![npm downloads weekly](https://img.shields.io/npm/dw/expo-downloads-manager)
 
 <!-- Describe your project in brief -->
+
+Just run
+
+```
+yarn add expo-file-dl
+```
