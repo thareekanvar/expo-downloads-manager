@@ -13,5 +13,5 @@
 Just run
 
 ```
-yarn add expo-file-dl
+yarn add expo-downloads-manager
 ```
