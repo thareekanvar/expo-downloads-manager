@@ -17,6 +17,10 @@
   "files": [
     "dist/**/*"
   ],
+  "funding": {
+    "type": "individual",
+    "url": "https://www.paypal.com/paypalme/thareekanvar"
+  },
   "repository": "https://github.com/thareekanvar/expo-downloads-manager",
   "author": "thareekanvar <thareekanvar@gmail.com>",
   "license": "MIT",
