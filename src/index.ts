@@ -10,6 +10,7 @@ export type Status = "downloading" | "finished" | "error";
 export async function downloadFileFromUri(
   uri: string,
   fileName: string,
+  options?: FileSystem.DownloadOptions,
   downloadProgressCallback?: FileSystem.DownloadProgressCallback
 ) {
   const fileUri: string = `${FileSystem.documentDirectory}${fileName}`;
@@ -21,7 +22,7 @@ export async function downloadFileFromUri(
       const downloadResumable = FileSystem.createDownloadResumable(
         uri,
         fileUri,
-        {},
+        options,
         downloadProgressCallback
       );
       await downloadResumable.downloadAsync();
@@ -30,7 +31,7 @@ export async function downloadFileFromUri(
         status,
       };
     } else {
-      await FileSystem.downloadAsync(uri, fileUri);
+      await FileSystem.downloadAsync(uri, fileUri, options);
       status = "finished";
       return {
         status,
