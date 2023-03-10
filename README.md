@@ -75,7 +75,8 @@ const callback = (downloadProgress) => {
         const { status, error } = await downloadFileFromUri(
               uri,
               fileName,
-              callback
+              callback,
+              options
             );
       }}
 ```
@@ -85,6 +86,7 @@ Arguments:
 - `uri`: `string` - the URI of the resource you want to download.
 - `filename`: `string` - the filename to save the resource (only the filename, no path information, must be unique).
 - `callback`?: `({totalBytesWritten: number, totalBytesExpectedToWrite: number}) => void` - Optional argument, gets called on every file write to the system with information about how much of the file has been written and how much is left to write.
+- `options`?: `({md5?: boolean; cache?: boolean; headers?: Record<string, string>; sessionType?: FileSystemSessionType;}) => void` - Optional argument, it is possible to add options at the time of making the call. 
 
 This function will download a file from the given URI.
 
